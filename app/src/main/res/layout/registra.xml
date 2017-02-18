@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/back_grad1">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo_image1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_shopping_cart_white_48dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_nomus"
+            android:layout_marginTop="240dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:errorTextAppearance="@style/Error"
+            android:theme="@style/TextLabel"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+            <!-- Campo - Nombre de Usuario para Registro -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nombre_usuarior"
+                android:hint="@string/username"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_account_circle_white_18dp"
+                android:backgroundTint="@color/abc_primary_text_material_dark"
+                android:layout_below="@+id/logo_image1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_emailReg"
+            android:layout_below="@id/input_layout_nomus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:errorTextAppearance="@style/Error"
+            android:theme="@style/TextLabel"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+            <!-- Campo - email para Registro -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:id="@+id/email_reg"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"
+                android:imeOptions="actionNext"
+                android:textIsSelectable="false"
+                android:drawableLeft="@drawable/ic_email_white_18dp"
+                android:drawablePadding="5dp"
+                android:backgroundTint="@color/abc_secondary_text_material_dark"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_firstPass"
+            android:layout_below="@id/input_layout_emailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:theme="@style/TextLabel"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+            <!-- Campo - Contraseña para Registro -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/password_reg"
+                android:textColorHint="#FFFFFF"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:hint="@string/prompt_password"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_lock_white_18dp"
+                android:drawablePadding="5dp"
+                android:backgroundTint="#FFF"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_secPass"
+            android:layout_below="@id/input_layout_firstPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:theme="@style/TextLabel"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+            <!-- Campo - Confirmar contraseña para Registro -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/confirm_pass"
+                android:backgroundTint="@color/abc_secondary_text_material_dark"
+                android:hint="@string/confirm_password"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textIsSelectable="false"
+                android:drawableLeft="@drawable/ic_lock_white_18dp"
+                android:drawablePadding="5dp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Botón personalizado para Registro-->
+        <com.dd.processbutton.iml.ActionProcessButton xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnRegistrar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:pb_colorComplete="@color/green_complete"
+            app:pb_colorNormal="#232730"
+            app:pb_colorPressed="#607D8B"
+            app:pb_colorProgress="@color/purple_progress"
+            app:pb_textComplete="Hecho"
+            app:pb_textProgress="Cargando"
+            app:pb_textError="Error"
+            app:pb_colorError="@color/red_error"
+            android:text="@string/action_reg"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <!-- Flat Button (Estilo en última línea) para ir a panel de Inicio de Sesión-->
+        <Button
+            android:id="@+id/hasAccount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:text="¿Ya tienes cuenta?"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/btnRegistrar"
+            android:layout_alignRight="@id/btnRegistrar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

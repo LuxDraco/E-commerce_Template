@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+}
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.agc.alfonso.appr"
+        minSdkVersion 18
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //Boton de cargar
+    //Facebook
+    
+
+    //Firebase
+    
+    //Steppers
+    
+    compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
+    compile 'com.github.dmytrodanylyk:android-morphing-button:98a4986e56'
+
+    compile 'com.mikepenz:actionitembadge:3.3.0@aar'
+    compile 'com.mikepenz:iconics-core:2.8.0@aar'
+    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-entypo:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-typicons:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-material:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-material-community:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-meteocons:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-weathericons:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-simplelineicons:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+
+
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+
+    compile 'com.android.support:support-core-utils:24.2.1'
+
+    compile 'com.google.firebase:firebase-core:9.8.0'
+    compile 'com.google.firebase:firebase-database:9.8.0'
+    compile 'com.google.firebase:firebase-auth:9.8.0'
+    compile 'com.google.firebase:firebase-storage:9.8.0'
+    compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+
+    compile 'me.drozdzynski.library.steppers:steppers:0.3.3-SNAPSHOT'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+
+    compile 'com.shawnlin:number-picker:2.2.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

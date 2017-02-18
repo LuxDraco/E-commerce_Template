@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "975878808649",
+    "firebase_url": "https://la-refa-e937e.firebaseio.com",
+    "project_id": "la-refa-e937e",
+    "storage_bucket": "la-refa-e937e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975878808649:android:41ca03cd2b294002",
+        "android_client_info": {
+          "package_name": "com.agc.alfonso.appr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975878808649-egfmlk7l2mmi001tn81hhsas9sc7kcf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agc.alfonso.appr",
+            "certificate_hash": "00B596E4F9CB30632689D55A9F88EB4F25D85D5A"
+          }
+        },
+        {
+          "client_id": "975878808649-o2hnma6nb6lh8ue8516ho3fe9jqs01k6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agc.alfonso.appr",
+            "certificate_hash": "256517869B3E8EE774965299A8E888622D412AE5"
+          }
+        },
+        {
+          "client_id": "975878808649-rh51g23o6sm51nujjeoct9tbh9s75nur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWvl_AcaDnCzB9WuKbK5vtf_JAStoUz84"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975878808649-rh51g23o6sm51nujjeoct9tbh9s75nur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

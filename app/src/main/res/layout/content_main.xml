@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.agc.alfonso.appr.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/back_grad1">
+
+    <!--
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="I {fa-heart-o} to {fa-code} on {fa-android}"
+        android:shadowColor="#22000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+    -->
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Busca tu Producto"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:id="@+id/titulo"
+        android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:shadowColor="@android:color/white"
+            android:shadowRadius="8.0"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"
+            android:layout_below="@+id/titulo"
+            android:layout_marginTop="20dp" />
+
+
+    <Spinner
+        android:id="@+id/lista_1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#D8D8D8"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        >
+
+    </Spinner>
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="8.0"
+        android:text="2"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lista_1"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+
+    <Spinner
+        android:id="@+id/lista_2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#D8D8D8"
+
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp">
+    </Spinner>
+
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="8.0"
+        android:text="3"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lista_2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+
+    <Spinner
+        android:id="@+id/lista_3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#D8D8D8"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp">
+    </Spinner>
+
+
+
+
+
+<!--
+    <com.dd.processbutton.iml.ActionProcessButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnRegistrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:pb_colorComplete="@color/green_complete"
+        app:pb_colorNormal="#232730"
+        app:pb_colorPressed="#607D8B"
+        app:pb_colorProgress="@color/purple_progress"
+        app:pb_textComplete="Hecho"
+        app:pb_textProgress="Cargando"
+        app:pb_textError="Error"
+        app:pb_colorError="@color/red_error"
+        android:text="Sing In"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/lista_3"
+        android:layout_alignEnd="@+id/lista_3"
+        android:layout_below="@+id/titulo2"
+        android:layout_marginTop="30dp" />
+-->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:id="@+id/linea2"
+        android:layout_below="@+id/lista_3"
+        android:layout_marginTop="35dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quieres vender Producto?"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titulo2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/linea2"
+        />
+
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="{fa-gamepad}"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#22000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:textSize="60sp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/titulo2"
+        android:id="@+id/view"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pon a disposición de todos tus productos de una manera sencilla."
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titulo3"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/view" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:id="@+id/linea1"
+        android:layout_below="@+id/titulo3"
+        android:layout_marginTop="35dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quieres buscar un Producto?"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titulo4"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/linea1"
+        />
+
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="{fa-desktop}"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#22000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:textSize="60sp"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/titulo4"
+        android:id="@+id/view2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentra gran cantidad de productos de manera rápida."
+
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titulo5"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/view2" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:id="@+id/linea3"
+        android:layout_below="@+id/titulo5"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <!--
+
+
+    <com.dd.processbutton.iml.ActionProcessButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnRegistrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:pb_colorComplete="@color/green_complete"
+        app:pb_colorNormal="#232730"
+        app:pb_colorPressed="#607D8B"
+        app:pb_colorProgress="@color/purple_progress"
+        app:pb_textComplete="Hecho"
+        app:pb_textProgress="Cargando"
+        app:pb_textError="Error"
+        app:pb_colorError="@color/red_error"
+        android:text="Comienza !"
+        android:layout_below="@+id/linea3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true" />
+
+
+
+    <com.dd.processbutton.iml.ActionProcessButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:pb_colorComplete="@color/green_complete"
+        app:pb_colorNormal="@color/blue_normal"
+        app:pb_colorPressed="#607D8B"
+        app:pb_colorProgress="@color/purple_progress"
+        app:pb_textComplete="Hecho"
+        app:pb_textProgress="Cargando"
+        app:pb_textError="Error"
+        app:pb_colorError="@color/red_error"
+        android:text="Registrate !"
+        android:layout_below="@+id/btnRegistrar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    -->
+
+</RelativeLayout>
+
+
+    </ScrollView>

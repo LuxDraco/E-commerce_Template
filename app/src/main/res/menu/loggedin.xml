@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.agc.alfonso.appr.LoggedinActivity">
+    <item
+        android:id="@+id/action_shopping_cart"
+        android:orderInCategory="10"
+        android:title="Carrito"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="200"
+        android:title="Search"
+        app:showAsAction="always"/>
+</menu>

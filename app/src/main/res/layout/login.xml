@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/back_grad1">
+
+
+        <!-- Imagen/Logo de la empresa -->
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:id="@+id/logo_image2"
+            android:src="@drawable/ic_shopping_cart_white_48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_marginTop="295dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+            <!-- Campo para email -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:imeOptions="actionNext"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"
+                android:textIsSelectable="false"
+                android:drawableLeft="@drawable/ic_email_white_18dp"
+                android:drawablePadding="5dp"
+                android:layout_above="@+id/btnInicioS" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_below="@id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+            <!-- Campo para contraseña -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:textColorHint="#FFFFFF"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_lock_white_18dp"
+                android:drawablePadding="5dp"
+                android:layout_alignTop="@+id/email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                tools:focusable="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Botón personalizado para inicio de sesión-->
+        <com.dd.processbutton.iml.ActionProcessButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btnInicioS"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:pb_colorComplete="@color/green_complete"
+            app:pb_colorNormal="#232730"
+            app:pb_colorPressed="#607D8B"
+            app:pb_colorProgress="@color/purple_progress"
+            app:pb_textComplete="Hecho"
+            app:pb_textProgress="Cargando"
+            app:pb_textError="Error"
+            app:pb_colorError="@color/red_error"
+            android:text="Iniciar Sesión"
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/input_layout_password"
+            android:layout_alignRight="@id/input_layout_password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btnInicioFacebook"
+            android:layout_above="@+id/btnInicioS"
+            android:layout_marginBottom="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+        </com.facebook.login.widget.LoginButton>
+
+
+        <!-- Flat Button (Estilo en última línea) para ir a panel de Registro-->
+        <Button
+            android:id="@+id/hasNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:text="¿Aún no tienes cuenta?"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_alignParentBottom="true"
+        android:layout_above="@+id/btnInicioFacebook"
+        android:layout_alignParentEnd="false"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="false"/>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
